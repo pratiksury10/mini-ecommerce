@@ -42,3 +42,8 @@ npm install
 npm run dev
 
 Open the dev URL (usually http://localhost:5173)
+
+
+🌐 Hosted on Vercel
+
+VIsit this website : https://mini-ecommerce-ashy-phi.vercel.app/
