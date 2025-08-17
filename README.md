@@ -1,12 +1,44 @@
-# React + Vite
+# Mini E-commerce (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A front-end mini e-commerce app that consumes the [Fake Store API](https://fakestoreapi.com/).  
+Built with React, React Router, Redux Toolkit, and localStorage caching.
 
-Currently, two official plugins are available:
+## ✨ Features
+- Product listing with search & category filter
+- Product detail with rating and quantity selector (1–5)
+- Shopping cart (thumbnail, unit price, qty 1–10, subtotal)
+- Grand total + proceed to checkout
+- Checkout form (name, email, address) with validation
+- “Place Order” clears cart and shows confirmation
+- Data caching in memory + localStorage (products, categories)
+- Global state via Redux Toolkit
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧱 Project Structure
+src/
+components/
+Navbar.jsx
+ProductCard.jsx
+pages/
+Home.jsx
+ProductDetail.jsx
+Cart.jsx
+Checkout.jsx
+OrderHistory.jsx # optional
+NotFound.jsx
+redux/
+store.js
+productSlice.js
+cartSlice.js
+router/
+AppRouter.jsx
+App.jsx
+main.jsx
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+```bash
+npm install
+npm run dev
+
+Open the dev URL (usually http://localhost:5173)
